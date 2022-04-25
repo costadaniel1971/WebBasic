@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pratica Web</title>
+  </head>
+  <link rel="stylesheet" type="text/css" href="./styles.css" />
+  <body>
+    <script src="./scripts.js"></script>
+    <div class="box">
+      <div class="field">
+        <label class="cente" for="date">Data</label>
+        <input type="date" name="date" id="date" />
+      </div>
+      <div class="field">
+        <label for="ticker">Ticker</label>
+        <input type="string" name="ticker" id="ticker" />
+      </div>
+      <div class="field">
+        <label for="quantity">Quantidade</label>
+        <input type="number" name="quantity" id="quantity" />
+      </div>
+      <div class="field">
+        <label for="unitPrice">Preço Unitário</label>
+        <input type="number" name="unitPrice" id="unitPrice" />
+      </div>
+      <div class="field">
+        <button onclick="save()">Adicionar</button>
+      </div>
+    </div>
+
+    <div class="boxTable">
+      <table border="1">
+        <thead>
+          <th>Data</th>
+          <th>Ticker</th>
+          <th>Quantidade</th>
+          <th>Preço Unitário</th>
+          <th>Total</th>
+        </thead>
+        <tbody class="bodyTable">
+          <tr></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>
